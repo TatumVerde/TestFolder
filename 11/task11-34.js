@@ -2,22 +2,19 @@ let n = parseInt(prompt('Введіть число'));
 
 let arr = new Array(n)
 
-let str1 = ''
-
-let str2 = ''
+let str = ''
 
 for (i = 0; i < arr.length; i++) {
     arr[i] = Math.floor(Math.random() * 2)
-    str1 = str1 + arr[i]
-    for(j = str1.length; j >= 0; j--)
-    if (j == 0) {
-        j == 1
-    } else if (j == 1) {
-        j == 0
-    }
-    str2 = str2 + 
-  
+    str = str + arr[i]
+}
+
+let arr2 = str.split('')
+let str2 = ''
+
+for(i = arr2.length -1; i >= 0; i--) {
+    str2 = str2 + arr2[i]
 }
 
 
-alert(str1 + ' ' + str2)
+alert(str + ' ' + str2)
