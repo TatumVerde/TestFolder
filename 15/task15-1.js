@@ -52,10 +52,6 @@ const cat = {
 }
 
 
-cat.isSatisfied('wet')
-cat.isSatisfied('wet')
-cat.isSatisfied('wet')
-cat.isSatisfied('dry')
-cat.toPlay('ball')
-cat.toIntroduse()
-console.log(cat)
+for (let key in cat) {
+	console.log(key + ' : ' + cat[key])
+}
